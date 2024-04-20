@@ -5,10 +5,11 @@
 */
 
 :root {
-  --accent-color: #ff0070;
+  /* --accent-color: #ff0070;
   --bg-color: #000028;
   --shadow-color: #db00ff;
   --main-font: "IBM Plex mono";
+  --background-image: url(../images/cover-image-dark.png); */
 }
 
 .page.theme_dark {
@@ -16,81 +17,5 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-color: var(--bg-color);
-}
-
-.page {
-  font-family: var(--main-font);
-  background-image: url(../images/cover-image-dark.png);
-  background-position: center;
-}
-
-.header {
-  display: grid;
-  grid-template-areas:
-    "header__lamp"
-    "header__theme-menu"
-    "header__title"
-    "header__text";
-  padding: 10px;
-  grid-auto-rows: min-content;
-  margin-bottom: 90px;
-}
-
-.header__theme-menu {
-  text-align: right;
-  margin-bottom: 68px;
-}
-
-.header__title {
-  color: var(--shadow-color);
-  font-size: 116px;
-  font-weight: 700;
-  line-height: 96px;
-  text-align: left;
-  text-shadow: 4px 4px 0 var(--accent-color);
-  margin-bottom: 55px;
-}
-
-.header__text {
-  color: var(--bg-color);
-  background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.header__lamp {
-  font-size: 18px;
-  color: var(--accent-color);
-  text-align: right;
-  margin-bottom: 40px;
-}
-
-@media (min-width: 375px) {
-  .header__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-}
-
-@media (min-width: 768px) and (min-width: 1024px) {
-  .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    padding: 20px;
-  }
-}
-
-.header__theme-menu-list {
-  display: grid;
-  gap: 10px;
-}
-
-.header__theme-menu-item {
-  color: var(--accent-color);
-  font-size: 18px;
-}
-
-.header__theme-menu-button {
-  text-transform: lowercase;
-  background-color: var(--bg-color);
-  border: none;
+  background-image: var(--background-image);
 }
