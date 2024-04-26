@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font, Verdana, sans-serif);
+  font-family: var(--main-font, "monospace");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -100,15 +100,12 @@
 }
 
 .header__theme-menu-button:focus {
-  border: none;
-  border-bottom: 1px solid var(--accent-color);
-  margin: 0;
   outline: none;
 }
 
 .header__theme-menu-button:focus-visible {
   border: none;
-  border-bottom: 1px solid rgb(255, 242, 0);
+  border-bottom: 1px solid var(--accent-color);
   margin: 0;
 }
 
@@ -238,8 +235,6 @@
     padding: 20px;
     grid-template-rows: 172px 273px 260px 254px;
     min-height: 1024px;
-    height: 100vh;
-    grid-template-columns: 1fr;
   }
   .header__rec {
     margin: 19px 21px 0 0;
@@ -329,7 +324,6 @@
   .header {
     grid-template-rows: 0 316px 228px 160px;
     min-height: 768px;
-    height: 100vh;
   }
   .header__title {
     font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
