@@ -9,8 +9,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-color: #ff8dcb;
-  background-image: url(../images/cover-image-light.png);
+  --background-image: url(../images/cover-image-light.png);
   --text-color: #353430;
   --bg-color: #353430;
   --font-text-color: #353430;
@@ -24,8 +23,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    background-color: #ff8dcb;
-    background-image: url(../images/cover-image-light.png);
+    --background-image: url(../images/cover-image-light.png);
     --text-color: #353430;
     --bg-color: #353430;
     --font-text-color: #353430;
