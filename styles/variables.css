@@ -6,11 +6,10 @@
 :root {
   --accent-color: #ff0070;
   --shadow-color: #db00ff;
-  --main-font: "IBM Plex mono", "monospace";
+  --main-font: "IBM Plex mono", monospace;
   --background-image: url(../images/cover-image-dark.png);
   --font-size: 18px;
   --font-text-color: #f1b2ce;
-  --button-color-shadow: rgba(255, 0, 112, 0.4);
   --bg-color: #ff0070;
   --text-color: #ff0070;
   --font-title-color: #000028;
